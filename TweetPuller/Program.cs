@@ -68,6 +68,10 @@ namespace TweetPuller
 
                 csv.WriteRecords(allQuestionsAndAnswers);
             }
+
+            Console.WriteLine($@"Wrote {allQuestionsAndAnswers.Count} rows to C:\TweetPullerOutput\QuestionsAndAnswers.csv");
+            Console.WriteLine(@"Press any key to finish.");
+            Console.ReadKey();
         }
     }
 
